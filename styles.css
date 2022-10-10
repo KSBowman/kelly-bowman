@@ -1,0 +1,10 @@
+/* test for correct page styles link path */
+body {
+    background-color: aqua;
+}
+
+h1 {
+    background-color: blue;
+    color: blueviolet;
+}
+
