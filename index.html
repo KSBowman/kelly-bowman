@@ -1,13 +1,105 @@
 <!doctype html>
 <html lang="en">
+
+<!-- *******REMOVE OR UNLINK STYLES SHEET PRIOR TO APPLICATION OF BOOTSTRAP -->
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./public_html/styles.css"/>
-  <title>Kelly Bowman Personal Web Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> About Kelly Bowman</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+  <!-- *******REMOVE OR UNLINK STYLES SHEET PRIOR TO APPLICATION OF BOOTSTRAP
+  <link rel="stylesheet" type="text/css" href="../kelly-bowman-pwp/public_html/styles.css">
+  *******REMOVE OR UNLINK STYLES SHEET PRIOR TO APPLICATION OF BOOTSTRAP -->
+
 </head>
+
 <body>
-<h1>TEST PAGE</h1>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-light" id="scrollBarNavBar">
+  <div class="container-fluid">
+    <p class="navbar-brand">Kelly here, where can I take you?</p>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+<!--***** .active & aria-current need testing or removal *****-->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="location" href="#scrollSpyHeadingHello">To the top of my page,</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="location" href="#scrollSpyHeadingWork">to my past work,</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="location" href="#scrollSpyHeadingHobby">or what I do after for me?</a>
+        </li>           <!--**********
+        <li class="nav-item">
+          <a class="nav-link disabled hidden">Disabled</a>
+        </li>         ****might use later, delete if unused?****-->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- enables scrolling on the div, called on in nav bar -->
+<div data-bs-spy="scroll" data-bs-target="scrollBarNavBar">
+
+<!-- Hello -->
+<section class="hello" id="scrollSpyHeadingHello">
+  <div class="hello-container container">
+    <div class="hello-row row">
+      <div class="hello-col col">
+        <h1>HELLO SECTION</h1>
+        <img src="images/2-18-2015-dismas.jpg" alt="main BG face shot">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Work -->
+<section class="work" id="scrollSpyHeadingWork">
+  <div class="work-container container">
+    <div class="work-row row">
+      <div class="work-col col">
+        <h1>WORK SECTION</h1>
+        <img src="images/2-18-2015-dismas.jpg" alt="need 3 work pics">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hobby -->
+<section class="hobby">
+  <div class="hobby-container container" id="scrollSpyHeadingHobby">
+    <div class="hobby-row row">
+      <div class="hobby-col col">
+        <h1>HOBBY SECTION</h1>
+        <img src="images/2-18-2015-dismas.jpg" alt="need 3 hobby pics">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- I think I want a "goodbye" image of my leaving. Ask George about that and have wireframe amendment ready or do them Sunday. -->
+
+</div>
+
+<!--Footer -->
+<section class="foot">
+  <div class="foot-container container">
+    <div class="foot-row row">
+      <div class="foot-col col">
+        <h1>FOOT SECTION</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End of Page -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
