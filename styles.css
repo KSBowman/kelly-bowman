@@ -3,3 +3,16 @@ body {
     background-color: aqua;
 }
 
+/*
+
+an attempt to text on pic - delete if text over bg works
+
+.pic-under-text {
+    z-index: 0;
+}
+
+.text-over-image {
+    z-index: 1;
+}
+
+ */
