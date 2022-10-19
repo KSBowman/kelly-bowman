@@ -40,8 +40,8 @@ Test
     color: white;
 }
 */
-.test {
-    height: 60vh;
+.hello {
+    height: 75vh;
     background: url(images/hello-background.png) no-repeat center center fixed;
     background-size: cover;
 }
