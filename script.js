@@ -15,8 +15,9 @@ function timeBasedGreeting (userDeviceHourOfDay) {
 }
 /* If chosen to reduce it, but not needed, maybe even hinder */
 let time = (timeBasedGreeting(hourOfDay))
-
 console.log(time)
-
 /* more likely to just use the function name and argument */
 console.log(timeBasedGreeting(hourOfDay))
+
+/* had to use below to transfer product of above function into the <span> element section. */
+document.getElementById("hello-span").innerHTML = timeBasedGreeting(hourOfDay)

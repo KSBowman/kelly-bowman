@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> About Kelly Bowman</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <script type="text/javascript" rel="script" src="script.js"></script>
   <link rel="stylesheet" type="text/css" href="styles.css">
 
 <!-- *******REMOVE OR UNLINK STYLES SHEET PRIOR TO APPLICATION OF BOOTSTRAP
@@ -22,8 +21,8 @@ move link in and out for testing
 
 <body class="" onload="timeBasedGreeting(hourOfDay)">
 
-<!-- Navigation - Initial set up is there and ok ***CHANGE BG-C TO LIGHT***-->
-<nav class="navbar navbar-expand-md bg-secondary sticky-top" id="scrollBarNavBar">
+<!-- Navigation - Initial set up is there and ok -->
+<nav class="navbar navbar-expand-md bg-light sticky-top" id="scrollBarNavBar">
   <div class="container-fluid">
     <p class="navbar-brand">Where can I take you?</p>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,23 +54,14 @@ move link in and out for testing
 <!-- Hello - work on verbiage and placement -->
 <section class="hello"  id="scrollSpyHeadingHello">
   <div class="hello-container container">
-    <div class="hello-row row">
-      <div class="hello-col-1 col">
-        <p class="text-over-image fs-3">Good <script> document.write(timeBasedGreeting(hourOfDay))</script>, I'm</p>
+    <div class="hello-row row ">
+      <div class="hello-col-1 col my-5">
+        <p class="text-over-image fs-1 ">Good <span id="hello-span"></span>, I'm</p>
         <p class="display-1">Kelly Bowman</p>
       </div>
     </div>
   </div>
 </section>
-
-
-<section class="test">
-    <figure class="textOver">
- <!--     <img src="images/hello-background.png"/>  -->
-      <figcaption>Hello, test.</figcaption>
-    </figure>
-</section>
-
 
 <!-- Work - set up the three rows, need to input and format them -->
 <section class="work" id="scrollSpyHeadingWork">
@@ -125,6 +115,7 @@ move link in and out for testing
 </section>
 
 <!-- End of Page -->
+<script type="text/javascript" rel="script" src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

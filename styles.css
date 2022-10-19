@@ -1,28 +1,12 @@
-/* test for correct page styles link path, will be modified prior presentation */
+/* test for correct page styles link path, will be modified prior presentation
 body {
     background-color: aqua;
 }
-
-/*
-
-an attempt to text on pic - delete if text over bg works
-
-.pic-under-text {
-    z-index: 0;
-}
-
-.text-over-image {
-    z-index: 1;
-}
-
-.hello {
-    background-image: url("./images/hello-background.png");
-
-}
-
 */
 
-/*
+/* an attempt to text on pic - delete if text over bg works
+
+.pic-under-text {
 
 Test
 
@@ -44,4 +28,8 @@ Test
     height: 75vh;
     background: url(images/hello-background.png) no-repeat center center fixed;
     background-size: cover;
+    padding-top: 5em;
+}
+.display-1 {
+    font-weight: bold;
 }
