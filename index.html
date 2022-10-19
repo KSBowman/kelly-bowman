@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> About Kelly Bowman</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script type="text/javascript" rel="script" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 
 <!-- *******REMOVE OR UNLINK STYLES SHEET PRIOR TO APPLICATION OF BOOTSTRAP
 move link in and out for testing
@@ -18,12 +20,12 @@ move link in and out for testing
 
 </head>
 
-<body class="">
+<body class="" onload="timeBasedGreeting(hourOfDay)">
 
 <!-- Navigation - Initial set up is there and ok ***CHANGE BG-C TO LIGHT***-->
 <nav class="navbar navbar-expand-lg bg-secondary sticky-top" id="scrollBarNavBar">
   <div class="container-fluid">
-    <p class="navbar-brand">Kelly here, where can I take you?</p>
+    <p class="navbar-brand">Where can I take you?</p>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,13 +33,13 @@ move link in and out for testing
       <ul class="navbar-nav">
 <!--***** .active & aria-current need testing or removal *****-->
         <li class="nav-item">
-          <a class="nav-link active" aria-current="location" href="#scrollSpyHeadingHello">To the top of my page,</a>
+          <a class="nav-link active" aria-current="location" href="#scrollSpyHeadingHello">To see me,</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="location" href="#scrollSpyHeadingWork">to my past work,</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="location" href="#scrollSpyHeadingHobby">or what I do after for me?</a>
+          <a class="nav-link active" aria-current="location" href="#scrollSpyHeadingHobby">or what I do after work for me?</a>
         </li>           <!--**********
         <li class="nav-item">
           <a class="nav-link disabled hidden">Disabled</a>
@@ -54,20 +56,46 @@ move link in and out for testing
 <section class="hello"  id="scrollSpyHeadingHello">
   <div class="hello-container container-fluid">
     <div class="hello-row row">
-        <h1 class="text-over-image">HELLO SECTION</h1>
+      <div class="hello-col-1 col">
+        <p class="text-over-image fs-3">Good <script> document.write(timeBasedGreeting(hourOfDay))</script>, I'm</p>
+        <p class="display-1">Kelly Bowman</p>
+      </div>
+      <div class="hello-col-2 col">
         <img class="img-fluid pic-under-text" src="images/hello-background.png" alt="main-bg-face-shot">
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Work -->
+
+<section class="test">
+    <figure class="textOver">
+ <!--     <img src="images/hello-background.png"/>  -->
+      <figcaption>Hello, test.</figcaption>
+    </figure>
+</section>
+
+
+<!-- Work - set up the three rows, need to input and format them -->
 <section class="work" id="scrollSpyHeadingWork">
   <div class="work-container container">
     <div class="work-row row">
       <div class="work-col col">
-        <h1>WORK SECTION</h1>
+        <h1>WORK SECTION 1</h1>
+        <img class="img-fluid" src="images/network-admin-tower.jpg" alt="need-3-work-pics">
+      </div>
+    <div class="work-row row">
+      <div class="work-col col">
+        <h1>WORK SECTION 2</h1>
         <img class="img-fluid" src="images/2-18-2015-dismas.jpg" alt="need-3-work-pics">
       </div>
+    </div>
+    <div class="work-row row">
+      <div class="work-col col">
+          <h1>WORK SECTION</h1>
+          <img class="img-fluid" src="images/2-18-2015-dismas.jpg" alt="need-3-work-pics">
+      </div>
+    </div>
     </div>
   </div>
 </section>
@@ -78,7 +106,7 @@ move link in and out for testing
     <div class="hobby-row row">
       <div class="hobby-col col">
         <h1>HOBBY SECTION</h1>
-        <img class="img-fluid" src="images/2-18-2015-dismas.jpg" alt="need-3-hobby-pics">
+        <img class="img-fluid" src="images/family.png" alt="need-3-hobby-pics">
       </div>
     </div>
   </div>

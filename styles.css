@@ -15,4 +15,33 @@ an attempt to text on pic - delete if text over bg works
     z-index: 1;
 }
 
- */
+.hello {
+    background-image: url("./images/hello-background.png");
+
+}
+
+*/
+
+/*
+
+Test
+
+.textOver img {
+    width: 100%;
+}
+.textOver {
+    max-width: 100%;
+    position: relative;
+}
+.textOver figcaption {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: white;
+}
+*/
+.test {
+    height: 60vh;
+    background: url(images/hello-background.png) no-repeat center center fixed;
+    background-size: cover;
+}
