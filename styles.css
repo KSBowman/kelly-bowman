@@ -4,28 +4,8 @@ body {
 }
 */
 
-/* an attempt to text on pic - delete if text over bg works
-
-.pic-under-text {
-
-Test
-
-.textOver img {
-    width: 100%;
-}
-.textOver {
-    max-width: 100%;
-    position: relative;
-}
-.textOver figcaption {
-    position: absolute;
-    top: 200px;
-    left: 100px;
-    color: white;
-}
-*/
 .hello {
-    height: 75vh;
+    height: 80vh;
     background: url(images/hello-background.png) no-repeat center center fixed;
     background-size: cover;
     padding-top: 5em;
@@ -33,4 +13,9 @@ Test
 .display-1 {
     font-weight: bold;
     color: white;
+}
+
+#nm-doit-logo {
+    width: %;
+    box-shadow: 5px 3px 3px red;
 }
