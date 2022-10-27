@@ -4,6 +4,7 @@ body {
 }
 */
 
+/* below for hello section bg/font overlay */
 .hello {
     height: 80vh;
     background: url(images/hello-background.png) no-repeat center center fixed;
@@ -15,22 +16,35 @@ body {
     color: white;
 }
 
+/* global changes */
 .body {
     background-color: #d4cdc9;
+    font-family: 'Slabo 27px', serif;
+    font-size: 115%;
 }
 
+.jobHobbyTitle {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
 /* work logos */
+.workLogo {
+    width: 65%;
+    height: auto;
+}
+
 #nm-doit-logo {
-    width: %;
     box-shadow: 5px 3px 3px red;
 }
 
 #dismas-logo {
-    width: %;
     box-shadow: 5px 3px 3px cyan;
 }
 
 #trinity-logo {
-    width: %;
     box-shadow: 5px 3px 3px green;
 }

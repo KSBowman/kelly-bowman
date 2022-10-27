@@ -9,13 +9,10 @@
   <title> About Kelly Bowman</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Slabo+27px&display=swap" rel="stylesheet">
 
-<!-- *******REMOVE OR UNLINK STYLES SHEET PRIOR TO APPLICATION OF BOOTSTRAP
-move link in and out for testing
-
-<link rel="stylesheet" type="text/css" href="styles.css">
-
-*******REMOVE OR UNLINK STYLES SHEET PRIOR TO APPLICATION OF BOOTSTRAP -->
 
 </head>
 
@@ -64,22 +61,21 @@ move link in and out for testing
   </div>
 </section>
 
-<!-- Work - set up the three rows, need to input and format them -->
-<section class="work py-5 " id="scrollSpyHeadingWork">
+<!-- Work - try to stadardize rows/boxes, fix logo break on bottom two -->
+<section class="work py-5 text-center" id="scrollSpyHeadingWork">
   <div class="container">
-    <div class="row my-3">
         <div class="row my-3 d-flex align-items-center justify-content-center border border-dark border-3 py-3 bg-light">
           <div class="col-lg">
             <img class="img-fluid border border-dark border-2" src="images/network-admin-tower-2.png" alt="net admin on tower">
           </div>
           <div class="col-lg">
-              <h1>Network Administrator</h1>
+              <h1 class="jobHobbyTitle">Network Administrator</h1>
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <img class="img-fluid m-4" src="images/nm-dept-of-it-logo.jpg" alt="nm-doit-logo" id="nm-doit-logo">
+                        <div class="col-sm d-flex align-items-center justify-content-center">
+                            <img class="img-fluid workLogo" src="images/nm-dept-of-it-logo.jpg" alt="nm-doit-logo" id="nm-doit-logo">
                         </div>
-                        <div class="col-sm-8 fs-3">
+                        <div class="col-sm fs-3">
                             <div class="container">
                                 <div class="row text-center p-4">
                                     <p>End: 04-2022</p>
@@ -119,13 +115,13 @@ move link in and out for testing
                 <img class="img-fluid border border-dark border-2" src="images/fast-paced-kitchen-2.jpeg" alt="fast paced kitchen">
             </div>
             <div class="col-lg">
-                <h1>Director</h1>
+                <h1 class="jobHobbyTitle">Director</h1>
             <div class="container">
             <div class="row">
-                  <div class="col-sm-4">
-                      <img class="img-fluid m-4" src="images/trinity-logo.png" alt="trinity-logo" id="trinity-logo">
+                  <div class="col-sm d-flex align-items-center justify-content-center">
+                      <img class="img-fluid workLogo" src="images/trinity-logo.png" alt="trinity-logo" id="trinity-logo">
                   </div>
-                  <div class="col-sm-8 fs-3">
+                  <div class="col-sm fs-3">
                       <div class="container">
                           <div class="row text-center p-4">
                               <p>End: 07-2020</p>
@@ -166,13 +162,13 @@ move link in and out for testing
                 <img class="img-fluid border border-dark border-2" src="images/2-18-2015-dismas.jpg" alt="accepting award at dismas">
             </div>
             <div class="col-lg">
-              <h1>Assistant Director</h1>
+              <h1 class="jobHobbyTitle">Assistant Director</h1>
               <div class="container">
                   <div class="row">
-                      <div class="col-sm-4">
-                          <img class="img-fluid m-4" src="images/dismas-charities.png" alt="dismas-logo" id="dismas-logo">
+                      <div class="col-sm d-flex align-items-center justify-content-center">
+                          <img class="img-fluid workLogo" src="images/dismas-charities.png" alt="dismas-logo" id="dismas-logo">
                       </div>
-                      <div class="col-sm-8 fs-3">
+                      <div class="col-sm fs-3">
                           <div class="container">
                               <div class="row text-center p-4">
                                   <p>End: 06-2018</p>
@@ -203,7 +199,6 @@ move link in and out for testing
     ****-->
             </div>
         </div>
-    </div>
   </div>
 </section>
 
