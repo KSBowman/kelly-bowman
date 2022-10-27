@@ -15,7 +15,22 @@ body {
     color: white;
 }
 
+.body {
+    background-color: #d4cdc9;
+}
+
+/* work logos */
 #nm-doit-logo {
     width: %;
     box-shadow: 5px 3px 3px red;
+}
+
+#dismas-logo {
+    width: %;
+    box-shadow: 5px 3px 3px cyan;
+}
+
+#trinity-logo {
+    width: %;
+    box-shadow: 5px 3px 3px green;
 }
