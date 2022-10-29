@@ -22,29 +22,28 @@ body {
     font-family: 'Slabo 27px', serif;
     font-size: 115%;
 }
-
 .jobHobbyTitle {
     font-family: 'Roboto', sans-serif;
 }
 
+/*!* skill logos*!*/
+/*.skillLogo {*/
+/*    height: 50%;*/
+/*    width: auto;*/
+/*}*/
 
 
-
-
-/* work logos */
+ /*work logos */
 .workLogo {
     width: 65%;
     height: auto;
 }
-
 #nm-doit-logo {
     box-shadow: 5px 3px 3px red;
 }
-
 #dismas-logo {
     box-shadow: 5px 3px 3px cyan;
 }
-
 #trinity-logo {
     box-shadow: 5px 3px 3px green;
 }
