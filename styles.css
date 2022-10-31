@@ -32,6 +32,12 @@ body {
     width: auto;
 }
 
+ /* project logos */
+.projectLogo {
+    width: 35%;
+    height: auto;
+}
+
  /*work logos */
 .workLogo {
     width: 65%;
