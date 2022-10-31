@@ -26,12 +26,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/*!* skill logos*!*/
-/*.skillLogo {*/
-/*    height: auto;*/
-/*    width: 50%;*/
-/*}*/
-
+/* skill logos*/
+.skillLogo {
+    height: 100px;
+    width: auto;
+}
 
  /*work logos */
 .workLogo {

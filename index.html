@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-<!-- *******REMOVE OR UNLINK STYLES SHEET PRIOR TO APPLICATION OF BOOTSTRAP -->
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,13 +14,12 @@
 
 </head>
 
-<body class="body" onload="timeBasedGreeting(hourOfDay)">
-<!--**** TEST WITHOUT ONLOAD AS SCRIPT CALL IS ON THE BOTTOM ****-->
+<body class="body">
 
-<!-- Sections start here, first div enables scrolling to the section, called on in nav bar -->
+<!-- Sections start here, below enables scrolling to the section, called on in nav bar -->
 <div data-bs-spy="scroll" data-bs-target="scrollBarNavBar"  id="scrollSpyHeadingHello">
 
-<!-- Navigation - Initial set up is there and ok -->
+<!-- Navigation -->
 <nav class="navbar navbar-expand-lg bg-light sticky-top" id="scrollBarNavBar">
   <div class="container-fluid">
     <p class="navbar-brand">Where can I take you?</p>
@@ -31,12 +28,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-<!--***** .active & .aria-current need testing or removal *****-->
         <li class="nav-item">
           <a class="nav-link active" aria-current="location" href="#scrollSpyHeadingHello">To see me,</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="location" href="#scrollSpyHeadingSkills">to my development skill set,</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="location" href="#scrollSpyHeadingProjects">to my past projects,</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="location" href="#scrollSpyHeadingWork">to my past work,</a>
@@ -54,7 +53,7 @@
   <div class="container">
     <div class="row ">
       <div class="col my-5">
-        <p class="text-over-image fs-1 ">Good <span id="hello-span"></span>, I'm</p>
+        <p class="text-over-image fs-1 pt-5">Good <span id="hello-span"></span>, I'm</p>
           <div class="container">
               <div class="row">
                   <div class="col-md-2">
@@ -71,30 +70,80 @@
 </section>
 <br class="my-4" id="scrollSpyHeadingSkills">
 
-<!-- Skill set NOT 100% ON DESKTOP LOOK, GOOD MOBILE THOUGH, MAYBE MEDIA QUIERY WILL HELP?-->
+<!-- Skill set -->
 <section class="skillSet">
     <div class="container">
-      <h1 class="jobHobbyTitle text-center">My development skill set...</h1>
-      <div class="row d-flex justify-content-center">
-          <img class="skillLogo image-fluid" src="images/skills_logos/html-js-css-logo.png" alt="html-js-css-logo">
+      <h1 class="jobHobbyTitle text-center py-3">My development skill set...</h1>
+      <div class="row d-flex justify-content-center my-2">
+          <img class="image-fluid skillLogo" src="images/skills_logos/html5-logo.png" id="html-logo">
+          <img class="image-fluid skillLogo" src="images/skills_logos/css3-logo.png" id="css-logo">
+          <img class="image-fluid skillLogo" src="images/skills_logos/bootstrap-logo.JPG" alt="bootstrap-logo">
+          <img class="image-fluid skillLogo" src="images/skills_logos/javascript-logo.png" id="javascript-logo">
       </div>
-      <div class="row d-flex justify-content-center">
-              <img class="image-fluid skillLogo" src="images/skills_logos/bootstrap-react-logo.png" alt="bootstrap-react-logo">
+      <div class="row d-flex justify-content-center my-3">
+          <img class="image-fluid skillLogo" src="images/skills_logos/react-logo.png" alt="react-logo">
+          <img class="image-fluid skillLogo" src="images/skills_logos/github-dark-logo.png" alt="github-logo">
       </div>
-      <div class="row d-flex justify-content-center">
-          <img class="image-fluid" src="images/skills_logos/node-git-ts-psql-logo.png" alt="node-git-ts-psql-logo">
+      <div class="row d-flex justify-content-center my-2">
+          <img class="image-fluid skillLogo" src="images/skills_logos/postgre_sql_hori.png" alt="postgresql-logo">
+          <img class="image-fluid skillLogo" src="images/skills_logos/ts-logo-512.png" alt="typescript-logo">
+          <img class="image-fluid skillLogo" src="images/skills_logos/nodejs-logo.png" alt="nodejs-logo">
       </div>
+    </div>
+</section>
+<br class="my-4" id="scrollSpyHeadingProjects">
+
+<!-- Portfolio  NEEDS COMPLETED, NOTHING DONE-->
+<section class="work text-center pt-2">
+    <div class="container">
+        <h1 class="jobHobbyTitle">...my past projects,</h1>
+        <div class="row rounded my-3 d-flex align-items-center justify-content-center border border-dark border-3 py-3 bg-light">
+            <div class="col-lg">
+                <img class="img-fluid rounded border border-dark border-2" src="images/" alt="little library locator landing page">
+            </div>
+            <div class="col-lg">
+               <h2 class="jobHobbyTitle">Little Library Locator</h2>
+               <div class="container">
+                  <div class="row">
+                       <div class="col-sm d-flex align-items-center justify-content-center">
+<!--   USE THE HOME PAGE AS THE IMAGE AND LINK IT                        -->
+                           <img class="workLogo" src="" alt="little-library-locator-logo" id="little-library-locator-logo" href="">
+                       </div>
+                  </div>
+               </div>
+               <p>Described the LLL site and the added value here.</p>
+                <a href=""> INSERT URL AS A LINK HERE ONCE AVAILABLE AS A LINK? </a>
+            </div>
+        </div>
+        <div class="row rounded my-3 d-flex align-items-center justify-content-center border border-dark border-3 py-3 bg-light">
+            <div class="col-lg">
+                <img class="img-fluid rounded border border-dark border-2" src="images/coming-soon.jpg" alt="coming soon">
+            </div>
+            <div class="col-lg">
+                <h2 class="jobHobbyTitle">Gentle Touch Equestrian Massage</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm d-flex align-items-center justify-content-center">
+                            <!--   USE THE HOME PAGE AS THE IMAGE AND LINK IT                        -->
+                            <img class="workLogo" src="images/coming-soon.jpg" alt="gentle-touch-eques-mass-logo" id="gentle-touch-eques-mass-logo" href="">
+                        </div>
+                    </div>
+                </div>
+                <p>Described the LLL site and the added value here.</p>
+                <a href=""> INSERT URL AS A LINK HERE ONCE AVAILABLE AS A LINK? </a>
+            </div>
+        </div>
     </div>
 </section>
 <br  id="scrollSpyHeadingWork">
 
-<!-- Work - FIX THE SCROLLSPYHEADINGWORK LANDING LOCATION -->
+<!-- Work -->
 <section class="work text-center pt-5">
   <div class="container">
-      <h1 class="jobHobbyTitle">My past work experience...</h1>
-        <div class="row my-3 d-flex align-items-center justify-content-center border border-dark border-3 py-3 bg-light">
+      <h1 class="jobHobbyTitle">...my past work experience,</h1>
+        <div class="row rounded my-3 d-flex align-items-center justify-content-center border border-dark border-3 py-3 bg-light">
           <div class="col-lg">
-            <img class="img-fluid border border-dark border-2" src="images/network-admin-tower-2.png" alt="net admin on tower">
+            <img class="img-fluid rounded border border-dark border-2" src="images/network-admin-tower-2.png" alt="net admin on tower">
           </div>
           <div class="col-lg">
               <h2 class="jobHobbyTitle">Network Administrator</h2>
@@ -138,9 +187,9 @@
 ****-->
           </div>
         </div>
-        <div class="row my-3 d-flex align-items-center border border-dark border-3 py-3 bg-light">
+        <div class="row rounded my-3 d-flex align-items-center border border-dark border-3 py-3 bg-light">
             <div class=" col-lg">
-                <img class="img-fluid border border-dark border-2" src="images/fast-paced-kitchen-2.jpeg" alt="fast paced kitchen">
+                <img class="img-fluid rounded border border-dark border-2" src="images/fast-paced-kitchen-2.jpeg" alt="fast paced kitchen">
             </div>
             <div class="col-lg">
                 <h2 class="jobHobbyTitle">Director</h2>
@@ -185,9 +234,9 @@
 ****-->
             </div>
         </div>
-        <div class="row mt-3 d-flex align-items-center border border-dark border-3 py-3 bg-light">
+        <div class="row rounded mt-3 d-flex align-items-center border border-dark border-3 py-3 bg-light">
             <div class="col-lg">
-                <img class="img-fluid border border-dark border-2" src="images/2-18-2015-dismas.jpg" alt="accepting award at dismas">
+                <img class="img-fluid rounded border border-dark border-2" src="images/2-18-2015-dismas.jpg" alt="accepting award at dismas">
             </div>
             <div class="col-lg">
               <h2 class="jobHobbyTitle">Assistant Director</h2>
@@ -231,10 +280,10 @@
 </section>
 <br id="scrollSpyHeadingHobby">
 
-<!-- Hobby -->
+<!-- Hobby NEEDS FILLED IN AND COMPLETED OR DELETED-->
 <section class="work my-5 text-center">
         <div class="container">
-          <h1 class="jobHobbyTitle mb-4">What I do for me...</h1>
+          <h1 class="jobHobbyTitle mb-4">...what I do for me.</h1>
             <div class="row d-flex align-items-center justify-content-center border border-dark border-3 py-3 bg-light">
                 <div class="col-lg">
                     <img class="img-fluid border border-dark border-2" src="images/family.png" alt="kelly-bowman-family">
@@ -292,7 +341,7 @@
 <!--Footer - PUT TEXT IN HERE. MAYBE HYPERLINKS, LOGOS, GITHUB, LINKED IN, ETC-->
 <section class="footer container-fluid">
     <div class="row">
-        <div class="col bg-light text-center my-2">
+        <div class="col bg-light text-center">
             <p>PUT TEXT IN HERE. MAYBE HYPERLINKS, LOGOS, GITHUB, LINKED IN, ETC.</p>
         </div>
     </div>
