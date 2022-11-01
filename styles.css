@@ -1,9 +1,3 @@
-/* test for correct page styles link path, will be modified prior presentation
-body {
-    background-color: aqua;
-}
-*/
-
 /* below for hello section bg/font overlay */
 .hello {
     height: 80vh;
@@ -40,7 +34,7 @@ body {
 
 /* work logos */
 .workLogo {
-    width: 65%;
+    width: 75%;
     height: auto;
 }
 #nm-doit-logo {
@@ -55,11 +49,10 @@ body {
 
 /* hobby carousel */
 /* Styling */
-section {
-    background: #f4f4f4;
+.hobbyCarousel {
     padding: 50px 0;
 }
-.container {
+.carouselContainer {
     max-width: 1044px;
     margin: 0 auto;
     padding: 0 20px;
@@ -228,4 +221,9 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.carousel__Description {
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 1em;
 }
