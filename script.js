@@ -8,8 +8,9 @@ function timeBasedGreeting (userDeviceHourOfDay) {
     if (userDeviceHourOfDay >= 11 && userDeviceHourOfDay <= 16) {
         return "afternoon";
     }
-    else
+    else {
         return "evening";
+    }
 }
 /* If chosen to reduce it, but not needed, maybe even hinder */
 let time = (timeBasedGreeting(hourOfDay))
