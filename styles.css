@@ -64,6 +64,7 @@
     margin-bottom: 22px;
 }
 .carousel > input {
+/*  cannot find replacement for the deprecated 'clip' outside of clip-path which is used below clip  */
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
     height: 1px;
