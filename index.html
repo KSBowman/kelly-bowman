@@ -18,7 +18,7 @@
 <body class="body">
 
 <!-- Sections start here, below enables scrolling to the section, called on in nav bar -->
-<div data-bs-spy="scroll" data-bs-target="scrollBarNavBar"  id="scrollSpyHeadingHello">
+<div class="wrapper" data-bs-spy="scroll" data-bs-target="scrollBarNavBar"  id="scrollSpyHeadingHello">
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-xxl bg-light sticky-top" id="scrollBarNavBar">
@@ -48,12 +48,24 @@
           <a class="nav-link active" aria-current="location" href="#scrollSpyHeadingClosingThought">To a closing thought.</a>
         </li>
       </ul>
-      <div class="row d-flex ms-auto">
-          <div class="col">
-            <a href="https://linkedin.com/in/kelly-bowman" target="_blank"><img class="mx-2" src="images/navbar/linkedin-icon-classic-header.webp" alt="linkedin-logo-header"/></a>
-            <a href="https://github.com/KSBowman" target="_blank"><img class="mx-2" src="images/navbar/github-logo-header.webp" alt="github-logo-header"/></a>
-            <a href="mailto:kelly@kelly-bowman.com?subject=I'd like to connect!&body=Hello Kelly. I'd like to connect!"><img class="mx-2" src="images/navbar/contact-icon-header.webp" alt="email-logo-header"/></a>
+      <div class="row ms-auto d-inline">
+<!--  Color theme selector-->
+<!--BASE CODE PULLED FROM https://codepen.io/kevinpowell/pen/MWXybWJ, AUTHORED BY KEVIN POWELL-->
+          <div class="col d-inline"></div>
+            <form class="color-picker mx-2" action="">
+                <fieldset>
+                  <legend class="visually-hidden">Pick a color scheme</legend>
+                  <label for="light" class="visually-hidden">Light</label>
+                  <input type="radio" name="theme" id="light" checked>
+                  <label for="dark" class="visually-hidden">Dark theme</label>
+                  <input type="radio" id="dark" name="theme">
+                </fieldset>
+            </form>
           </div>
+<!--  End color theme picker  -->
+          <a href="https://linkedin.com/in/kelly-bowman" target="_blank"><img class="mx-2" src="images/navbar/linkedin-icon-classic-header.webp" alt="linkedin-logo-header"/></a>
+          <a href="https://github.com/KSBowman" target="_blank"><img class="mx-2" src="images/navbar/github-logo-header.webp" alt="github-logo-header"/></a>
+          <a href="mailto:kelly@kelly-bowman.com?subject=I'd like to connect!&body=Hello Kelly. I'd like to connect!"><img class="mx-2" src="images/navbar/contact-icon-header.webp" alt="email-logo-header"/></a>
       </div>
     </div>
   </div>
