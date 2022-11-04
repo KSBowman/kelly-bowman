@@ -12,3 +12,34 @@ function timeBasedGreeting (userDeviceHourOfDay) {
     }
 }
 document.getElementById("hello-span").innerHTML = timeBasedGreeting(hourOfDay);
+
+/***********************************************************************************************************************/
+/* theme selector */
+/*BASE CODE PULLED FROM https://codepen.io/kevinpowell/pen/MWXybWJ, AUTHORED BY KEVIN POWELL*/
+
+const colorThemes = document.querySelectorAll('[name="theme"]');
+
+// store theme
+const storeTheme = function (theme) {
+    localStorage.setItem("theme", theme);
+};
+
+// set theme when visitor returns
+const setTheme = function () {
+    const activeTheme = localStorage.getItem("theme");
+    colorThemes.forEach((themeOption) => {
+        if (themeOption.id === activeTheme) {
+            themeOption.checked = true;
+        }
+    });
+    // fallback for no :has() support
+    // document.documentElement.className = activeTheme;
+};
+
+colorThemes.forEach((themeOption) => {
+    themeOption.addEventListener("click", () => {
+        storeTheme(themeOption.id);
+    });
+});
+
+document.onload = setTheme();
