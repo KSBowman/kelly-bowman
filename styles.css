@@ -12,7 +12,6 @@
 
 /* global changes */
 .body {
-    background-color: #d4cdc9;
     font-family: 'Slabo 27px', serif;
     font-size: 115%;
 }
@@ -51,10 +50,11 @@
 /* theme selector */
 /*BASE CODE PULLED FROM https://codepen.io/kevinpowell/pen/MWXybWJ, AUTHORED BY KEVIN POWELL*/
 :root {
-    --clr-body-bg: hsl(0 0% 90%);
-    --clr-card-bg: hsl(0 0% 100%);
-    --clr-text: hsl(0 0% 15%);
-    --clr-heading: hsl(0 0% 25%);
+    --clr-body-bg: hsl(0 0% 83%);
+    --project-work-bg: hsl(211 17% 98%);
+    --closing-thought-bg: hsl(239 77% 45%);
+    --clr-text: hsl(0 0% 5%);
+    --clr-heading: hsl(0 0% 5%);
 }
 
 body {
@@ -64,6 +64,14 @@ body {
     /*line-height: 1.5;*/
     background: var(--clr-body-bg);
     color: var(--clr-text);
+}
+
+.proj-work-box{
+    background-color: var(--project-work-bg);
+}
+
+#closing-thought{
+    background-color: var(--closing-thought-bg);
 }
 
 h1,
@@ -183,7 +191,8 @@ h3 {
 .dark,
 :root:has(#dark:checked) {
     --clr-body-bg: hsl(209 50% 10%);
-    --clr-card-bg: hsl(209 50% 5%);
+    --project-work-bg: hsl(209 50% 5%);
+    --closing-thought-bg: hsl(7 7% 7%);
     --clr-text: hsl(209 50% 90%);
     --clr-heading: hsl(209 50% 80%);
 }
