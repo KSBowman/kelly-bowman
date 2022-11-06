@@ -48,7 +48,7 @@
 
 /***********************************************************************************************************************/
 /* theme selector */
-/*BASE CODE PULLED FROM https://codepen.io/kevinpowell/pen/MWXybWJ, AUTHORED BY KEVIN POWELL*/
+/*BASE CODE PULLED FROM https://codepen.io/kevinpowell/pen/MWXybWJ, AUTHORED BY KEVIN POWELL, MODIFIED BY ME PER NEEDS*/
 :root {
     --clr-body-bg: hsl(0 0% 83%);
     --nav-foot-bg: hsl(0 0% 83%);
@@ -59,10 +59,6 @@
 }
 
 body {
-    /*margin: 0;*/
-    /*font-family: system-ui, sans-serif;*/
-    /*font-size: 1.25rem;*/
-    /*line-height: 1.5;*/
     background: var(--clr-body-bg);
     color: var(--clr-text);
 }
@@ -80,45 +76,11 @@ body {
 
 }
 
-
 h1,
 h2,
 h3 {
     color: var(--clr-heading);
-    /*line-height: 1.1;*/
 }
-
-/*.auto-grid {*/
-/*    --min-column-size: 225px;*/
-
-/*    display: grid;*/
-/*    gap: clamp(1rem, 5vmax, 1.625rem);*/
-/*    grid-template-columns: repeat(*/
-/*    auto-fit,*/
-/*    minmax(min(100%, var(--min-column-size)), 1fr)*/
-/*  );*/
-/*}*/
-
-/*.wrapper {*/
-/*    --max-width: 55rem;*/
-/*    width: min(100% - 2rem, var(--max-width));*/
-/*    margin-inline: auto;*/
-/*}*/
-
-/*.card {*/
-/*    padding: 1rem;*/
-/*    background-color: var(--clr-card-bg);*/
-/*    border-block-start: 0.5rem solid;*/
-/*    border-radius: 0.5rem;*/
-/*}*/
-
-/*.card > * {*/
-/*    margin: 0;*/
-/*}*/
-
-/*.card > *:not(:last-child) {*/
-/*    margin-bottom: 0.75rem;*/
-/*}*/
 
 .visually-hidden {
     clip: rect(0 0 0 0);
@@ -131,14 +93,9 @@ h3 {
 }
 
 .color-picker > fieldset {
-    /*border: 0;*/
     display: flex;
     gap: 2rem;
-    /*width: fit-content;*/
-    /*background: pink;*/
-    /*padding: 0 1rem;*/
     margin-inline: auto;
-    /*border-radius: 0 0 1rem 1rem;*/
     align-content: center;
 }
 
@@ -158,42 +115,10 @@ h3 {
 .color-picker input[type="radio"]#light {
     --radio-color: gray;
 }
-/*.color-picker input[type="radio"]#pink {*/
-/*    --radio-color: pink;*/
-/*}*/
-/*.color-picker input[type="radio"]#blue {*/
-/*    --radio-color: blue;*/
-/*}*/
-/*.color-picker input[type="radio"]#green {*/
-/*    --radio-color: green;*/
-/*}*/
+
 .color-picker input[type="radio"]#dark {
     --radio-color: black;
 }
-
-/*.pink,*/
-/*:root:has(#pink:checked) {*/
-/*    --clr-body-bg: hsl(310 50% 90%);*/
-/*    --clr-card-bg: hsl(310 50% 100%);*/
-/*    --clr-text: hsl(310 50% 15%);*/
-/*    --clr-heading: hsl(310 50% 25%);*/
-/*}*/
-
-/*.blue,*/
-/*:root:has(#blue:checked) {*/
-/*    --clr-body-bg: hsl(209 50% 90%);*/
-/*    --clr-card-bg: hsl(209 50% 100%);*/
-/*    --clr-text: hsl(209 50% 15%);*/
-/*    --clr-heading: hsl(209 50% 25%);*/
-/*}*/
-
-/*.green,*/
-/*:root:has(#green:checked) {*/
-/*    --clr-body-bg: hsl(109 50% 90%);*/
-/*    --clr-card-bg: hsl(109 50% 100%);*/
-/*    --clr-text: hsl(109 50% 15%);*/
-/*    --clr-heading: hsl(109 50% 25%);*/
-/*}*/
 
 .dark,
 :root:has(#dark:checked) {
@@ -208,7 +133,7 @@ h3 {
 
 /***********************************************************************************************************************/
 /* hobby carousel */
-/*CAROUSEL BASE CODE PULLED FROM https://freefrontend.com/css-carousels/, AUTHORED BY RONNY SIIKALUOMA ON 2019-12-01*/
+/*CAROUSEL BASE CODE PULLED FROM https://freefrontend.com/css-carousels/, AUTHORED BY RONNY SIIKALUOMA ON 2019-12-01, MODIFIED BY ME PER NEEDS*/
 .hobbyCarousel {
     padding: 50px 0;
 }
