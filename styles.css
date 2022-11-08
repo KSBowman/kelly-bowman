@@ -120,7 +120,15 @@ h3 {
     --radio-color: black;
 }
 
-.dark,
+.dark {
+    --nav-foot-bg: hsl(208 5% 48%);
+    --clr-body-bg: hsl(209 50% 10%);
+    --project-work-bg: hsl(209 50% 5%);
+    --closing-thought-bg: hsl(7 7% 7%);
+    --clr-text: hsl(209 50% 90%);
+    --clr-heading: hsl(209 50% 80%);
+}
+
 :root:has(#dark:checked) {
     --nav-foot-bg: hsl(208 5% 48%);
     --clr-body-bg: hsl(209 50% 10%);

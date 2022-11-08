@@ -33,12 +33,14 @@ const setTheme = function () {
         }
     });
     // fallback for no :has() support
-    // document.documentElement.className = activeTheme;
+    document.documentElement.className = activeTheme;
 };
 
 colorThemes.forEach((themeOption) => {
     themeOption.addEventListener("click", () => {
         storeTheme(themeOption.id);
+        // fallback for no :has() support
+        document.documentElement.className = themeOption.id;
     });
 });
 
