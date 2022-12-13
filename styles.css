@@ -1,7 +1,7 @@
 /* below for hello section bg/font overlay */
 .hello {
     height: 80vh;
-    background: url(public_html/documentation/hello-background-1.webp) no-repeat center center fixed;
+    background: url(images/hello-background-1.webp) no-repeat center center fixed;
     background-size: cover;
     padding-top: 5em;
 }
