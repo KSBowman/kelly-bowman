@@ -36,6 +36,9 @@
     width: 75%;
     height: auto;
 }
+#sceye-logo {
+    box-shadow: 5px 3px 3px #01477b;
+}
 #nm-doit-logo {
     box-shadow: 5px 3px 3px red;
 }
